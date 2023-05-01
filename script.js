@@ -59,3 +59,5 @@ bookList.addEventListener('click', (event) => {
 
 // Render book list on page load
 renderBookList();
+
+// Refactoring the code
