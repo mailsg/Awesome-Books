@@ -142,8 +142,8 @@ To run tests, run the following command:
 
 - GitHub: [@mailsg](https://github.com/mailsg)
 
-👤 **celyne**
-GitHub[@celyneBirungi]https://github.com/CELYNEBIRUNGI
+👤 **Celyne**
+- GitHub: [@celyneBirungi](https://github.com/CELYNEBIRUNGI)
 
 
 
