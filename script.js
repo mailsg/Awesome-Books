@@ -56,9 +56,10 @@ class BookCollection {
     this.books.forEach((book, index) => {
       // Create book item
       const bookItem = document.createElement('div');
+      bookItem.classList.add('bookItem');
       bookItem.innerHTML = `
-        <span>${book.title}<br>${book.author}</span><br>
-        <button class="removeButton" data-index="${index}">Remove</button><br><br><hr>
+        <span>${book.title}&nbsp by &nbsp${book.author}</span>&nbsp &nbsp
+        <button class="removeButton" data-index="${index}">Remove</button>
       `;
       this.bookList.appendChild(bookItem);
     });

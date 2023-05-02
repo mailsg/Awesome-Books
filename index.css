@@ -1,3 +1,42 @@
 body {
   padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin-left: 40rem;
+}
+
+hr {
+  width: 100px;
+  margin-top: 40px;
+}
+
+.newbook {
+  margin-left: 44rem;
+}
+
+#addButton {
+  margin-left: 9rem;
+}
+
+#titleInput,
+#authorInput {
+  margin-left: -2rem;
+  width: 13rem;
+}
+
+.bookItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  margin-left: 35rem;
+}
+
+.bookItem:nth-child(odd) {
+  background-color: #f2f2f2;
 }
