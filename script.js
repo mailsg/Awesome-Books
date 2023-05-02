@@ -55,3 +55,7 @@ const bookManager = new BookManager();
 function removeBookWrapper(id) {
   BookManager.removeBook(id);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  BookManager.loadData();
+});
