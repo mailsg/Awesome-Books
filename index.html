@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Awesome Books</title>
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
-  </head>
-
-  <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Awesome Books</title>
-  </head>
-  <body>
-    <h1>Awesome Books</h1>
-
-    <div id="bookList">
-      <!-- Book items will be added here dynamically -->
+    <title>Awesome books</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body onload="bookManager.loadData()">
+    <div class="wrap">
+        <h1>All Awesome Books</h1>
+        <table id="data">
+            <tbody>
+            </tbody>
+        </table>
+        <hr/>
+        <h1>Add a new box</h1>
+        <form action="" method="get" id="awesomebook">
+            <ul>
+                <li>
+                    <input type="text" id="title" name="title" placeholder="Title" class="box-form"/>
+                </li>
+                <li>
+                    <input type="text" id="author" name="author" placeholder="Author" class="box-form"/>
+                </li>
+                <li class="btn-form"> 
+                    <button type="button" onclick="bookManager.addBook()">Add</button>
+                </li>
+            </ul>
+        </form>
     </div>
-
-    <div>
-      <input type="text" id="titleInput" placeholder="Title"><br><br>
-      <input type="text" id="authorInput" placeholder="Author"><br><br>
-      <button id="addButton">Add</button>
-    </div>
-
     <script src="script.js"></script>
-  </body>
-</html>
+</body>
 </html>
