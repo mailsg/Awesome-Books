@@ -136,9 +136,9 @@ footer {
   padding: 20px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
   border: 2px solid #000;
-  margin-top: 200px;
-  position: absolute;
+  position: fixed;
   width: 100%;
+  bottom: 0;
 }
 
 .center {
