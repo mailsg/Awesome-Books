@@ -54,6 +54,7 @@
 - **Home Page**
 - **Add/Remove Books Page**
 - **Update Books Page**
+- **Time**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
