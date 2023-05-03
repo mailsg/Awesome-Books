@@ -40,7 +40,8 @@ class BookManager {
     const books = JSON.parse(localStorage.getItem('books')) || [];
     books.push({ title: book.title, author: book.author, id: book.id });
     localStorage.setItem('books', JSON.stringify(books));
-    alert('Data inserted successfully');
+    document.getElementById('title').value = '';
+    document.getElementById('author').value = '';
   }
 
   static removeBook(id) {
@@ -107,3 +108,7 @@ function displayDate() {
 }
 
 setInterval(displayDate, 1000);
+
+document.addEventListener('DOMContentLoaded', () => {
+  BookManager.loadData();
+});

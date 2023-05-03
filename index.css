@@ -97,6 +97,7 @@ hr {
   padding-left: 40px;
   padding-right: 40px;
   font-size: 20px;
+  cursor: pointer;
 }
 
 #navUl > li:first-child {
