@@ -59,3 +59,12 @@ function removeBookWrapper(id) {
 document.addEventListener('DOMContentLoaded', () => {
   BookManager.loadData();
 });
+
+function updateTime() {
+  const now = new Date();
+  const dateTimeElement = document.getElementById('datetime');
+  dateTimeElement.innerText = now.toLocaleString();
+}
+
+updateTime();
+setInterval(updateTime, 1000);
